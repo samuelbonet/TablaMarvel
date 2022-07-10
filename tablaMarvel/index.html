@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Universo Marvel</title>
+   
+    <style>
+    :root {
+  --yellow: #e9b938;
+  --pink: #d2427f;
+  --blue: #28a6da;
+  --green: #6aa32e;
+  --white: #fff;
+  --black: #000;
+  --red: #bd0000;
+  --purple: #9859b6;
+  --orange: #ff8000;
+  --lightblue: #4deeea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 101%;
+  margin: 0;
+  background: #202e38;
+  font-family: "Roboto Mono", monospace;
+  color: var(--white);
+}
+
+h1,
+h2 {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+h2 {
+  font-size: 15px;
+}
+.symbology {
+  width: 300px;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  top: 100px;
+}
+
+.category {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  margin-top: -14px;
+  display: block;
+  margin-left: 20px;
+}
+
+.periodic-table {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: -100px;
+}
+
+.element {
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.number {
+  text-align: right;
+  font-size: 8px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.symbol {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+.name {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+.capital-letter {
+  text-transform: uppercase;
+}
+
+.imperative {
+  border: 5px solid var(--yellow);
+  color: var(--yellow);
+}
+.mechanical {
+  border: 5px solid var(--red);
+  color: var(--red);
+}
+
+.concurrent {
+  border: 5px solid var(--white);
+  color: var(--white);
+}
+
+.dynamic {
+  border: 5px solid var(--pink);
+  color: var(--pink);
+}
+
+.declarative {
+  border: 5px solid var(--purple);
+  color: var(--purple);
+}
+
+.scripting {
+  border: 5px solid var(--green);
+  color: var(--green);
+}
+
+.functional {
+  border: 5px solid var(--blue);
+  color: var(--blue);
+}
+
+.object-oriented {
+  border: 5px solid var(--orange);
+  color: var(--orange);
+}
+
+.multi-paradigm {
+  border: 5px solid var(--lightblue);
+  color: var(--lightblue);
+}
+
+.element:hover {
+  transform: scale(1.1);
+  color: var(--black);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.imperative:hover {
+  background: var(--yellow);
+}
+.dynamic:hover {
+  background: var(--pink);
+}
+
+.functional:hover {
+  background: var(--blue);
+}
+
+.scripting:hover {
+  background: var(--green);
+}
+.concurrent:hover {
+  background: var(--white);
+}
+
+.mechanical:hover {
+  background: var(--red);
+}
+
+.declarative:hover {
+  background: var(--purple);
+}
+
+.object-oriented:hover {
+  background: var(--orange);
+}
+.multi-paradigm:hover {
+  background: var(--lightblue);
+}
+
+   </style>
+  </head>
+  <body>
+    <h1>Universo Marvel</h1>
+    <div class="symbology">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="periodic-table">
+      <div class="group">
+        <div class="element mechanical">
+          <p class="number">1</p>
+          <abbr class="symbol">H</abbr>
+          <p class="name">Hulk</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">3</p>
+          <abbr class="symbol">C</abbr>
+          <p class="name">Capitán América</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">7</p>
+          <abbr class="symbol">MG</abbr>
+          <p class="name capital-letter">Máquina de Guerra</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">13</p>
+          <abbr class="symbol">CM</abbr>
+          <p class="name">Capitana Marvel</p>
+        </div>
+        <div class="element concurrent">
+          <p class="number">22</p>
+          <abbr class="symbol">SL</abbr>
+          <p class="name">Star Lord</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">32</p>
+          <abbr class="symbol">G</abbr>
+          <p class="name">Gamora</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="element imperative">
+          <p class="number">4</p>
+          <abbr class="symbol">T</abbr>
+          <p class="name capital-letter">Thor</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">8</p>
+          <abbr class="symbol">L</abbr>
+          <p class="name">Looki</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">14</p>
+          <abbr class="symbol">R</abbr>
+          <p class="name">Rocket</p>
+        </div>
+        <div class="element object-oriented">
+          <p class="number">23</p>
+          <abbr class="symbol">D</abbr>
+          <p class="name">Drax</p>
+        </div>
+        <div class="element object-oriented">
+          <p class="number">33</p>
+          <abbr class="symbol">G</abbr>
+          <p class="name">Groot</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="element object-oriented">
+          <p class="number">9</p>
+          <abbr class="symbol">ANT</abbr>
+          <p class="name">Ant-man</p>
+        </div>
+        <div class="element object-oriented">
+          <p class="number">15</p>
+          <abbr class="symbol">S</abbr>
+          <p class="name">Spiderm-man</p>
+        </div>
+        <div class="element object-oriented">
+          <p class="number">24</p>
+          <abbr class="symbol">T</abbr>
+          <p class="name">Thanos</p>
+        </div>
+        <div class="element object-oriented">
+          <p class="number">34</p>
+          <abbr class="symbol">B</abbr>
+          <p class="name">Black Panther</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="element declarative">
+          <p class="number">16</p>
+          <abbr class="symbol">V</abbr>
+          <p class="name capital-letter">Valquiria</p>
+        </div>
+        <div class="element object-oriented">
+          <p class="number">25</p>
+          <abbr class="symbol">F</abbr>
+          <p class="name">Falcon</p>
+        </div>
+        <div class="element multi-paradigm">
+          <p class="number">35</p>
+          <abbr class="symbol">SI</abbr>
+          <p class="name">Soldado de Invierno</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="element declarative">
+          <p class="number">17</p>
+          <abbr class="symbol">BZ</abbr>
+          <p class="name">Baron Zemo</p>
+        </div>
+        <div class="element scripting">
+          <p class="number">26</p>
+          <abbr class="symbol">BS</abbr>
+          <p class="name">Bruja Escarlata</p>
+        </div>
+        <div class="element scripting">
+          <p class="number">36</p>
+          <abbr class="symbol">V</abbr>
+          <p class="name">Vision</p>
+        </div>
+      </div>
+      <div class="group">  
+        <div class="element scripting">
+          <p class="number">27</p>
+          <abbr class="symbol">D</abbr>
+          <p class="name">Doctor Strange</p>
+        </div>
+        <div class="element scripting">
+          <p class="number">37</p>
+          <abbr class="symbol">W</abbr>
+          <p class="name">Wong</p>
+        </div>
+      </div>
+        <div class="group">
+        <div class="element imperative">
+          <p class="number">18</p>
+          <abbr class="symbol">A</abbr>
+          <p class="name">America Chavez</p>
+        </div>
+        <div class="element scripting">
+          <p class="number">28</p>
+          <abbr class="symbol">X</abbr>
+          <p class="name">Profesor Xavier</p>
+        </div>
+        <div class="element scripting">
+          <p class="number">38</p>
+          <abbr class="symbol">C</abbr>
+          <p class="name">Ciclope</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="element imperative">
+          <p class="number">10</p>
+          <abbr class="symbol">L</abbr>
+          <p class="name capital-letter">Lobezno</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">19</p>
+          <abbr class="symbol">M</abbr>
+          <p class="name">Magneto</p>
+        </div>
+        <div class="element scripting">
+          <p class="number">29</p>
+          <abbr class="symbol">T</abbr>
+          <p class="name">Tormenta</p>
+        </div>
+        <div class="element scripting">
+          <p class="number">39</p>
+          <abbr class="symbol">D</abbr>
+          <p class="name">Deadpool</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="element imperative">
+          <p class="number">5</p>
+          <abbr class="symbol">V</abbr>
+          <p class="name capital-letter">Viuda Negra</p>
+        </div>
+        <div class="element imperative">
+          <p class="number">11</p>
+          <abbr class="symbol">DD</abbr>
+          <p class="name">Dare Devil</p>
+        </div>
+        <div class="element functional">
+          <p class="number">20</p>
+          <abbr class="symbol">V</abbr>
+          <p class="name capital-letter">Venom</p>
+        </div>
+        <div class="element functional">
+          <p class="number">30</p>
+          <abbr class="symbol">NF</abbr>
+          <p class="name">Nick Furia</p>
+        </div>
+        <div class="element functional">
+          <p class="number">40</p>
+          <abbr class="symbol">CL</abbr>
+          <p class="name">Caballero Luna</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="element mechanical">
+          <p class="number">2</p>
+          <abbr class="symbol">I</abbr>
+          <p class="name">Iron Man</p>
+        </div>
+        <div class="element functional">
+          <p class="number">6</p>
+          <abbr class="symbol">O</abbr>
+          <p class="name capital-letter">Ojo de Halcón</p>
+        </div>
+        <div class="element functional">
+          <p class="number">12</p>
+          <abbr class="symbol">SC</abbr>
+          <p class="name capital-letter">Shang-Chi</p>
+        </div>
+        <div class="element functional">
+          <p class="number">21</p>
+          <abbr class="symbol">sc</abbr>
+          <p class="name">scheme</p>
+        </div>
+        <div class="element functional">
+          <p class="number">31</p>
+          <abbr class="symbol">AC</abbr>
+          <p class="name">Agente Carter</p>
+        </div>
+        <div class="element functional">
+          <p class="number">41</p>
+          <abbr class="symbol">O</abbr>
+          <p class="name">Okoye</p>
+        </div>
+      </div>   
+    </div>
+
+    <div class="periodic-table">   
+        <div class="element multi-paradigm">
+            <p class="number">42</p>
+          <abbr class="symbol">MB</abbr>
+          <p class="name">M'Baku</p>
+        </div>
+        <div class="element multi-paradigm">
+            <p class="number">43</p>
+          <abbr class="symbol">N</abbr>
+          <p class="name">Nebula</p>
+        </div>
+        <div class="element dynamic">
+            <p class="number">44</p>
+          <abbr class="symbol">P</abbr>
+          <p class="name">Punisher</p>
+        </div>
+        <div class="element dynamic">
+            <p class="number">45</p>
+          <abbr class="symbol">S</abbr>
+          <p class="name">Sylvie</p>
+        </div>
+        <div class="element concurrent">
+            <p class="number">46</p>
+          <abbr class="symbol">M</abbr>
+          <p class="name">Morbius</p>
+        </div>
+        <div class="element functional">
+            <p class="number">47</p>
+          <abbr class="symbol">NF</abbr>
+          <p class="name">Nick Furia</p>
+        </div>     
+      </div> 
+  </body>
+</html>
+
