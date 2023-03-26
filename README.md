@@ -1,4 +1,27 @@
 # Tabla Marvel
+
 Tabla periódica basada en los personajes de Marvel
 
-[![captura.jpg](https://i.postimg.cc/tRkRPsd2/captura.jpg)](https://postimg.cc/s1BRCDNh)
+## Construido con 🛠️
+
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+
+## Autores ✒️
+
+
+
+* **Samuel Bonet** - [samuelbonet](https://github.com/samuelbonet)
+ 
+
+## Licencia 📄
+
+Este proyecto es de uso libre y gratuito para cualquier usuario
+
+
+
+---
+⌨️ con ❤️ por [samuelbonet](https://github.com/samuelbonet) 😊
+
+
+
